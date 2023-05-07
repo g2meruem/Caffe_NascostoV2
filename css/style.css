@@ -4,11 +4,31 @@
     --light: #F1F8FF;
     --dark: #0F172B;
 }
-.logo_caffe{
-    height: 8% !important;
-    width: 8% !important;
-    padding-right: 20px !important;
-}
+.logo_caffe {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 200px;
+    padding: 0 10px;
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .logo_caffe {
+      height: 90px !important;
+      width: 120px !important;
+      margin-right: 4px !important;
+    }
+    
+    .text-primary.m-0 {
+      font-size: 20px;
+    }
+  }
+  
 
 .ff-secondary {
     font-family: 'Pacifico', cursive;

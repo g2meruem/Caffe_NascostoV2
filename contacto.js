@@ -7,8 +7,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 18
 }).addTo(mymap);
 
-// añade un marcador en la ubicación del Caffe Nascosto
+// añade un marcador en la ubicación del  Caffé Nascosto
 var marker = L.marker([42.7288, -78.0137]).addTo(mymap);
 
-// añade un cuadro emergente con información del Caffe Nascosto cuando se hace clic en el marcador
-marker.bindPopup("<b>Caffe Nascosto</b><br> 123 Main St<br> Anytown, USA").openPopup();
+// añade un cuadro emergente con información del  Caffé Nascosto cuando se hace clic en el marcador
+marker.bindPopup("<b> Caffé Nascosto</b><br> 123 Main St<br> Anytown, USA").openPopup();
