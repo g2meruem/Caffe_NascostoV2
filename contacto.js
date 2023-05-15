@@ -4,7 +4,7 @@ var mymap = L.map('mapid').setView([42.7288, -78.0137], 13);
 // añade una capa de teselas de mapa de OpenStreetMap
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-    maxZoom: 18
+    maxZoom: 0
 }).addTo(mymap);
 
 // añade un marcador en la ubicación del  Caffé Nascosto
