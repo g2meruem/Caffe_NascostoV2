@@ -29,10 +29,7 @@
       font-size: 20px;
     }
   }
-    .colored-svg {
-        filter: brightness(0.8) invert(82%) sepia(100%) saturate(200%) hue-rotate(30deg) brightness(75%);
-      }
-
+   
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
