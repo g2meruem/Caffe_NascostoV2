@@ -14,7 +14,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -38,7 +40,8 @@
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Cargando...</span>
             </div>
@@ -71,7 +74,7 @@
                 <div class="container text-center my-5 pt-5 pb-4">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Donde Estamos</h1>
                     <nav aria-label="breadcrumb">
-                       
+
                     </nav>
                 </div>
             </div>
@@ -80,7 +83,7 @@
 
 
         <!-- Contacto Start -->
-        
+
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -88,60 +91,13 @@
                     <h1 class="mb-5">Nuestro local</h1>
                 </div>
                 <div class="row g-4">
-                    
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div id="mapid" style="height: 500px;"></div>
-                        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script>
-      // Inicializa el mapa en el div "mapid"
-      var mymap = L.map("mapid").setView([-34.56471, -58.45572], 20);
 
-      // Agrega un "tile layer" a nuestro mapa
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution:
-          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 20,
-        tileSize: 512,
-        zoomOffset: -1,
-      }).addTo(mymap);
-    </script>
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.55792191824!2d-58.4557082!3d-34.5647469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d142ac6e41%3A0x40654bc63a64333a!2sCaffe%20Nascosto!5e0!3m2!1ses-419!2sar!4v1756403090916!5m2!1ses-419!2sar"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <!-- <div class="col-md-6">
-                        <div class="wow fadeInUp" data-wow-delay="0.2s">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Tu nombre</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Tu email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Asunto</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                            <label for="message">Mensaje</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Enviar mensaje</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -154,52 +110,57 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Nuestra compania</h4>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Nuestra compania
+                        </h4>
                         <a class="btn btn-link" href="">Sobre el lugar</a>
                         <a class="btn btn-link" href="">Contacto</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contacto</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ciudad de La Paz 1883, Belgrano, CABA</p>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Ciudad de La Paz 1883, Belgrano, CABA
+                        </p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+54 4786-4409</p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>caffenascosto@gmail.com</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/nascostocaffe" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/nascostocaffe/" target="_blank"><i class="fab fa-instagram"></i></a>                     
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/nascostocaffe"
+                                target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/nascostocaffe/"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Horarios de atención</h4>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Horarios de
+                            atención</h4>
                         <h5 class="text-light fw-normal">Lunes - Sabados</h5>
                         <p>08AM - 08PM</p>
                         <h5 class="text-light fw-normal">Feriados</h5>
                         <p>Consultar</p>
                     </div>
-                    
+
                 </div>
             </div>
-           
-        <!-- Footer End -->
+
+            <!-- Footer End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+            <!-- Back to Top -->
+            <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        </div>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>
